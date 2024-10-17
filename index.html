@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <title>A Carta</title>
+        <style>
+            html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: black;
+}
+li {
+    font-size: 18px;
+}
+p {
+    font-size: 18px;
+}
+a {
+    text-decoration: none;
+}
+.escondiddinho {
+    display: none;
+}
+.input {
+    width: 300px; 
+    height: 24px;
+}
+.btn {
+    margin-top: 20px;
+    background-color: rgba(260, 260, 260 , 0.8);
+    font-size: 21px;
+    color: black;
+}
+.d {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url('https://2.bp.blogspot.com/-uUbMbRQ44lI/UNzwcp_UbdI/AAAAAAAADi4/ak6nmGxvPuM/s640/A+FROTA+DE+CABRAL+SAI+DE+PORTUGAL.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;;
+}
+.de {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+} 
+.app {
+    height: 100vh;
+    margin: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background-color: black;
+   margin: 0;
+   width: 100vw;
+   height: 100vh;
+   background-image: url('https://www.todoestudo.com.br/wp-content/uploads/2018/07/Pero-vaz-de-caminha.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+   }
+   #texto {
+    position: absolute;
+    top: -100px;
+    transition: top 2s;
+    color: black;
+    font-size: 70px;
+    }
+    #buto {
+        margin-top: 20px;
+        background-color: black;
+        font-size: 35px;
+        color: white;
+        transition: background-color 0.3s, transform 0.3s;
+        display: none;
+      }
+      .des {
+        display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUHTFh-eF9BMtnkz1Zt0YAgE6hFQNWAqt5Jqoe0EikCZl85sM7eGAflFK_4ihQklYt1aAIdC3GqhN85OSM7OYIG-kAONvfDkKMS7M137HTkWjnZUDIqNOOYZ-XfyS-dePonbA0uvXhV6a4/s1600/Meirelles-primeiramissa2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+      }
+      .dese {
+        display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url('https://www.educacaonamao.com.br/wp-content/uploads/2018/09/quinhentismo-1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+      }
+      .desen {
+        display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url('https://saci.org.br/wp-content/uploads/2019/06/quinhentismo-foto.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+      }
+      .desenh {
+        display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url('https://www3.al.sp.gov.br/repositorio/noticia/03-2008/M-Wagner%20Takekawa%20obra.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+      }
+      .desenho {
+        display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url('https://rduirapuru.com.br/wp-content/uploads/2022/04/descobrimento-do-brasil-historia-chegada-ao-brasil-e-curiosidades.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+      }
+      .desenhos {
+        display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url('https://portosma.com.br/wp-content/uploads/2023/01/Pagina-Carta-5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+      }
+      .desenhoso {
+        display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url('https://content-cdn.querobolsa.com.br/uploads/29e6a70e-eb77-4a8c-92a2-8415fb1b8705.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+      }
+      .desenhosa {
+        display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url('https://escolaeducacao.com.br/wp-content/uploads/2020/03/pero-vaz-caminha-1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+      }
+      .finalmente {
+        display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url('https://academiacristadeletras.org.br/images/artigos/geraldo_nunes/pero_vaz_de_caminha_67fab.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+      }
+      h1 {
+        color:black;
+      }
+      h2 {
+        color:black;
+      }
+      a {
+        text-decoration: none;
+      }
+      .ultima {
+        text-align: center;
+    margin: 0;
+    width: 100vw;
+    height: 130vh;
+    color: white;
+      }
+        </style>
+    </head>
+    <body>
+        <div id="div0"  class="app" >
+            <h1 id="texto">A Carta</h1>
+            <button id="buto" onclick="ocultar(0); qvi(13)">Começar</button>
+            </div>
+            <div id="div13" class="escondiddinho">
+                <div class="de">
+                    <h1 style="color: white;">Instruções gerais:</h1>
+                    <ul style="text-align: left;">
+                        <li>Use apenas letras minúsculas para o preenchimento da resposta</li>
+                        <li>Não use algarismos romanos.</li>
+                        <li>Não coloque acentos em suas respostas.</li>
+                        <li>Meu conselho: guarde tudo em sua memória. A sua memória será a sua maior aliada neste jogo.</li>
+                    </ul>
+                    <h1 style="color: white;">Boa sorte!</h1>
+                    <button class="btn" onclick="qvi(1)">Começar jogo</button>
+                </div>
+            </div>
+        <div id="div1" class="escondiddinho">
+            <div class="d">
+            <h1 style="color: black;">Escritor da carta que descreve a descoberta de um novo mundo em 1500</h1><br><br><br>
+            <input type="text" id="r" style="width: 300px; height: 24px;" placeholder="Digite a sua resposta">
+            <br><br>
+            <button class="btn" id="but">Verificar</button>
+             <p id="resu" style="color: black; background-color: white;"></p>
+            </div>
+        </div>
+        <div id="div2" class="escondiddinho">
+            <div class="des">
+                <h1>Nasceu em Alcochete, Portugal, em 31 de maio de 1469</h1>
+                <input type="text" id="re" class="input"placeholder="Digite a sua resposta">
+                <br>
+                <button class="btn" onclick="show()">Dica</button>
+                <p id="trust" style="color:black; background-color: white;"></p>
+                <button class="btn" id="bot">Verificar</button>
+                <p id="result" style="color: black; background-color: white;"></p>
+            </div>
+        </div>
+        <div id="div3" class="escondiddinho">
+            <div class="dese">
+                <h1>atocipa</h1>
+                <h3 style="font-style:oblique;">'amagrama'</h3>
+                <input type="text" id="rt" class="input" placeholder="Digite a sua resposta">
+                <br><br>
+                <button class="btn" id="bbb">Verificar</button>
+                <p id="ro" style="color: black; background-color: white;"></p>
+            </div>
+        </div>
+        <div id="div4" class="escondiddinho">
+            <div class="desen">
+                <h2 style="color: white; background-color: black;">"De ponta a ponta, é tudo praia-palma, muito chã e muito formosa. Pelo sertão nos pareceu, vista do mar, muito grande, porque, a estender olhos, não podíamos ver senão terra com arvoredos, que nos parecia muito longa. Nela, até agora, não pudemos saber que haja ouro, nem prata, nem coisa alguma de metal ou ferro; nem lho vimos. Porém a terra em si é de muito bons ares."</h2>
+                <input type="text" id="int" class="input" placeholder="Digite a resposta">
+                <br><br>
+                <button id="on" class="btn">Dica</button>
+                <p id="ooo" style="background-color: white;"></p>
+                <button class="btn" id="bom">Verificar</button>
+                <p id="rrr" style="color: black; background-color: white;"></p>
+            </div>
+        </div>
+        <div id="div5" class="escondiddinho">
+            <div class="desenh">
+                <h1 style="color:white">Preste bastante atenção. A sua pressa em ser a PRIMEIRA pessoa pode atrapalhar você de enxergar as LETRAs</h1>
+                <h2 style="color: white;">A)blhtaroa</h2>
+                <h2 style="color: white;">B)cboames</h2>
+                <h2 style="color:white;">C)zarqiue</h2>
+                <h2 style="color: white;">D)oarleigi</h2>
+                <h2 style="color:white;">E)teanavru</h2>
+                <input type="text" id="shit" class="input" placeholder="Digite a sua resposta">
+                <button onclick="dif()" class="btn">Dica</button>
+                <p id="dig" style="color:black;background-color: white;"></p>
+                <button class="btn" id="mario">Verificar</button>
+                <p id="yyy" style="color: black; background-color: white;"></p>
+            </div>
+        </div>
+        <div id="div6" class="escondiddinho">
+            <div class="desenho">
+                <h1>Espero que tenha seguido o meu conselho do início.</h1>
+                <h1 style="text-align: center;">C</h1>
+                <input type="text" id="fuck" class="input" placeholder="Digite a sua resposta">
+                <br>
+                <button class="btn" onclick="ni()">Dica</button>
+                <p id="piii" style="color:black; background-color:white;"></p>
+                <button class="btn" id="armario">Verificar</button>
+                <p id="aaa" style="color: black; background-color: white;"></p>
+            </div>
+        </div>
+        <div id="div7" class="escondiddinho">
+            <div class="desenhos">
+                <h1>A carta do achamento foi escrita em 1° de maio de B5AA</h1>
+                <h2>BABAAAA BAAAAAB BABABAB - BAAAABA BABAABA BAAAAAB BABAABB BAABAAB BAABBAA</h2>
+                <input type="text" id="cansa" class="input" placeholder="Digite a resposta">
+                <br>
+                <button class="btn" onclick="bin()">Dica</button>
+                <p id="pin" style="color:black;"></p>
+                <button class="btn" id="amd">Verificar</button>
+                <p id="ccc" style="color: black; background-color: white;"></p>
+            </div>
+        </div>
+        <div id="div8" class="escondiddinho">
+            <div class="desenhoso">
+                <h1>Aqui está um código de livro:</h1>
+                <ul>
+                    <li>22:1</li>
+                    <li>21:1</li>
+                    <li>8:1</li>
+                    <li>12:4</li>
+                    <li>10:3</li>
+                </ul>
+                <h3>Talvez isso o ajude na resolução: https://portalabel.org.br/images/pdfs/carta-pero-vaz.pdf</h3>
+                <h5>strfi gpae</h5>
+                <input type="text" class="input" id="as" placeholder="Digite a sua resposta">
+                <button id="btmm" class="btn">Dica</button>
+                <p id="tyou"></p>
+                <br>
+                <button class="btn" id="ryzen">Verificar</button>
+                <p id="intel" style="color: black; background-color: white;"></p>
+            </div>
+        </div>
+        <div class="escondiddinho" id="div9">
+            <div class="desenhosa">
+                <h1 style="color: white;">69 6e 64 c3 ad 67 65 6e 61 73</h1>
+                <input type="text" class="input" id="bj" placeholder="Digite a sua resposta">
+                <button class="btn" id="cara">Dica</button>
+                <p id="ti"></p>
+                <br>
+                <button class="btn" id="qwe">Verificar</button>
+                <p id="por" style="color:black;"></p>
+            </div>
+        </div>
+        <div class="escondiddinho" id="div10">
+            <div class="finalmente">
+                <h1 style="color: white;">Será que Pero Vaz de Caminha conhecia Tibério Cláudio César?</h1>
+                <h2 style="color: white;">(2000-1500)/100</h2>
+                <h2 style="color:white;">Ufwfgjsx</h2>
+                <input type="text" class="input" id="idi" placeholder="Digite a sua resposta">
+                <button class="btn" id="dica">Dica</button>
+                <p style="color:white; background-color: black;" id="io"></p>
+                <br>
+                <button class="btn" id="pls">Verificar</button>
+                <p id="ultima" style="color: white; background-color: black;"></p>
+            </div>
+        </div>
+        <div class="escondiddinho" id="div11">
+            <div class="ultima">
+                <h1 style="color: white;">Mais uma vez, parabéns por ter chegado ao fim!</h1>
+                <h2 style="color: white;">Esse jogo foi feito como parte do Projeto de gamificação e produção de podcasts.</h2>
+                <h1 style="color:white;">Créditos:</h1>
+                <p style="color:white;">
+                    GRUPO DE PESQUISAS GESTELD (CNPq-CTI-FEB-UNESP)</p>
+                    <p style="color:white;">Escola: COLÉGIO TÉCNICO INDUSTRIAL PROF ISAAC PORTAL ROLDÁN - FACULDADE DE ENGENHARIA - UNESP, BAURU, SP </p>
+                    <p style="color: white;">DISCIPLINAS: LÍNGUA PORTUGUESA E LITERATURA e REDAÇÃO TÉCNICA</p>
+                    <p style="color: white;">PROJETO DE PESQUISA: EDUCOMUNICAÇÃO, TECNOLOGIAS E LINGUAGENS</p>
+                    <p style="color:white;">Orientação: PROFª DRª MARIA REGINA MOMESSO</p>
+                   <p style="color:white;"> Empresa de COMUNICAÇÃO E MARKETING: Descobridores da América </p>
+                    <p style="color:white;">PRODUÇÃO, DIREÇÃO, EDIÇÃO, DESIGN, LOCUÇÃO
+                    EQUIPE: Arthur, Bryan, Davi, Diego, Helena, Jhonathan e Rodrigo.</p>
+
+                    <h2 style="color: white;">Assista ao nosso podcast:</h2>
+                    <img src="https://raw.githubusercontent.com/SecretSociet/prf/main/qrcode.png" alt="">
+                    <h2 style="color: white;">Ou clique <a href="https://www.youtube.com/watch?v=lgGwMK9gP_o">aqui</a>  </h2>
+            </div>
+        </div>
+        </div>
+        <script>
+            texto.style.top = '0px';
+setTimeout (() => {
+    texto.style.top = '27vh';
+}, 1000);
+
+setTimeout(() => {
+  buto.style.display = 'block';
+}, 3000);
+
+
+function div(divIndex) {
+    document.querySelectorAll('div[id^="div"]').forEach(div => {
+        div.style.display = 'none';
+    });
+    document.getElementById('div' + divIndex).style.display = 'block';
+}
+function divi(divIndex) {
+    setTimeout(() => {
+        div(divIndex);
+    }, 500)
+}
+function qvi(divIndex) {
+    div(divIndex);
+}
+function ocultar(divIndex) {
+    document.getElementById('div' + divIndex).style.display = 'none';
+};
+
+document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+    Mensagem("A ação não permitida.");
+});
+
+document.addEventListener("keydown", function (e) {
+    if (e.ctrlKey && e.key === "u") {
+        e.preventDefault();
+        if (!bloqueio) {
+            Mensagem("Ação não permitida!");
+            bloqueio = true;
+            setTimeout(() => {
+                bloqueio = false;
+            }, 3000);
+        }
+    }
+    if (e.key === "F12") {
+        e.preventDefault();
+        Mensagem("Ação não permitida!");
+    }
+});
+
+function Mensagem(msg) {
+    let avisodecria = document.createElement("div");
+    avisodecria.textContent = msg;
+    avisodecria.style.position = "fixed";
+    avisodecria.style.bottom = "10px";
+    avisodecria.style.right = "10px";
+    avisodecria.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+    avisodecria.style.color = "white";
+    avisodecria.style.padding = "10px";
+    avisodecria.style.borderRadius = "5px";
+    document.body.appendChild(avisodecria);
+    
+    setTimeout(() => {
+        avisodecria.remove();
+    }, 3000);
+}
+//será que algúem está lendo isso? 
+const r = document.getElementById('r');
+const but = document.getElementById('but');
+const resul = document.getElementById('resu');
+const re = document.getElementById('re');
+const bot = document.getElementById('bot');
+const result = document.getElementById('result');
+const rt = document.getElementById('rt');
+const bbb = document.getElementById('bbb');
+const ro = document.getElementById('ro');
+const int = document.getElementById('int');
+const bom = document.getElementById('bom');
+const rrr = document.getElementById('rrr');
+const shit = document.getElementById('shit');
+const mario = document.getElementById('mario');
+const yyy = document.getElementById('yyy');
+const fuck = document.getElementById('fuck');
+const armario = document.getElementById('armario');
+const aaa = document.getElementById('aaa');
+const cansa = document.getElementById('cansa');
+const amd = document.getElementById('amd');
+const ccc = document.getElementById('ccc');
+const as = document.getElementById('as');
+const ryzen = document.getElementById('ryzen');
+const intel = document.getElementById('intel');
+const bj = document.getElementById('bj');
+const qwe = document.getElementById('qwe');
+const por = document.getElementById('por');
+const idi = document.getElementById('idi');
+const pls = document.getElementById('pls');
+const ultima = document.getElementById('ultima');
+
+function bin () {
+    pin.textContent = '1° de maio de 1500';
+}
+function ni() {
+    piii.textContent = 'O que tinha na fase anterior?'
+}
+function show() {
+    trust.textContent = 'Quem foi o destinatário da carta do achamento?'
+}
+function dif (){
+    dig.textContent = 'As letras de cada palavra estão meio embaralhadas entre si, não? Qual deve ser a primeira letra de cada uma?'
+}
+function func() {
+    const informes = idi.value.trim().toLowerCase();
+    if (informes === '') {
+        ultima.textContent = 'Por favor, digite uma informação';
+    } else if (informes === 'parabens') {
+        ultima.textContent = 'Parabéns!';
+        div(11)
+    } else {
+        ultima.textContent = 'Tente novamente';
+    }
+}
+dica.addEventListener('click', func);
+function verificar() {
+    const informacao = r.value.trim().toLowerCase();
+    if (informacao === '') {
+      resul.textContent = 'Por favor, digite uma informação';
+    } else if (informacao === 'pero vaz de caminha') {
+      resul.textContent = 'Parabéns, você está correto!';
+      div(2)
+    } else {
+      resul.textContent = 'Erro, tente novamente!';
+    }
+  }
+
+  but.addEventListener('click', verificar);
+
+  function verify() {
+    const info = re.value.trim().toLowerCase();
+    if (info === '') {
+        result.textContent = 'Por favor, digite uma informação';
+    } else if (info === 'dom manuel 1') {
+        result.textContent = 'Parabéns, você está correto!';
+        div(3)
+    } else {
+        result.textContent = 'Errado, tente novamente!';
+    }
+  }
+  bot.addEventListener('click', verify);
+
+  function veri() {
+    const inf = rt.value.trim().toLowerCase();
+    if (inf === '') {
+        ro.textContent = 'Digite algo';
+    } else if (inf === 'capitao') {
+        ro.textContent = 'Parabéns, você está correto';
+        div(4)
+    } else {
+        ro.textContent = 'Errado, tente novamente';
+    }
+  }
+  bbb.addEventListener('click', veri);
+
+  function ver() {
+    const ingen = int.value.trim().toLowerCase();
+    if (ingen === '') {
+        rrr.textContent = 'Digite algo';
+    } else if (ingen === 'brasil') {
+        rrr.textContent = 'Parabéns';
+        div(5)
+    } else {
+        rrr.textContent = 'Errado, tente novamente';
+    }
+  }
+  bom.addEventListener('click', ver);
+
+  function vvv() {
+    const ing = shit.value.trim().toLowerCase();
+    if (ing === '') {
+        yyy.textContent = 'Digite algo';
+    } else if (ing === 'terra') {
+        yyy.textContent = 'Parabéns';
+        div(6)
+    } else {
+        yyy.textContent = 'Errado, tente novamente';
+    }
+  }
+  mario.addEventListener('click', vvv);
+
+  function baralho() {
+    const jkl = fuck.value.trim().toLowerCase();
+    if (jkl === '') {
+        aaa.textContent = 'Digite algo';
+    } else if (jkl === 'riqueza') {
+        aaa.textContent = 'Parabéns';
+        div(7)
+    } else {
+        aaa.textContent = 'Errado, tente novamente';
+    }
+  }
+  armario.addEventListener('click', baralho);
+
+  function cassete() {
+    const tyl = cansa.value.trim().toLowerCase();
+    if(tyl === '') {
+        ccc.textContent = 'Digite algo';
+    } else if (tyl === 'pau-brasil') {
+        ccc.textContent = 'Parabéns';
+        div(8)
+    } else {
+        ccc.textContent = 'Errado, tente novamente';
+    }
+  }
+  amd.addEventListener('click', cassete);
+
+  function computer() {
+    const asd = as.value.trim().toLowerCase();
+    if (asd === '') {
+        intel.textContent = 'Digite algo';
+    } else if (asd === 'pedro') {
+        intel.textContent = 'Está correto!';
+        div(9)
+    } else {
+        intel.textContent = 'Errado, tente novamente';
+    }
+  }
+  ryzen.addEventListener('click', computer);
+  btmm.addEventListener('click', function dica () {
+    tyou.textContent = 'Vou lendo linha por linha, coluna por coluna';
+  });
+  on.addEventListener('click', function dia (){
+    ooo.textContent = 'Onde você está? Pense bem, o mundo é grande, onde você está no mundo?';
+  });
+
+  function vocesabi() {
+    const answer = bj.value.trim().toLowerCase();
+    if (answer === '') {
+        por.textContent = 'Digite algo';
+    } else if (answer === 'indigenas') {
+        por.textContent = 'Está correto';
+        div(10)
+    } else {
+        por.textContent = 'Errado. tente novamente';
+    }
+  }
+  qwe.addEventListener('click', vocesabi);
+  cara.addEventListener('click', function diva() {
+    ti.textContent = 'Sistema de base 16';
+  });
+
+  function darkweb() {
+    const deep = id.value.trim().toLowerCase();
+    if (deep === '') {
+        plinha.textContent = 'Digite algo';
+    } else if (deep === 'parabens') {
+        plinha.textContent = 'Certo';
+        div(11)
+    } else {
+        pllinha.textContent = 'Errado, tente novamente';
+    }
+  }
+  pls.addEventListener('click', darkweb);
+  dica.addEventListener('click', function di() {
+    io.textContent = '1° dica: Criptografia. 2° dica:Procure o lugar certo para apertar e passar de fase';
+  });
+        </script>
+    </body>
+</html>
